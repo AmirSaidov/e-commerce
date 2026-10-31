@@ -65,11 +65,6 @@ e2e/                   Playwright-сценарии
 - **SEO:** `generateMetadata` с Open Graph, JSON-LD (Product, BreadcrumbList), `sitemap.xml`, `robots.txt`, корректный 404.
 - **Доступность:** навигация с клавиатуры, видимый фокус, aria-атрибуты у поиска-комбобокса, галереи и слайдера, учёт `prefers-reduced-motion`.
 
-## Docker
+## Деплой
 
-```bash
-docker build -t voltra-frontend \
-  --build-arg NEXT_PUBLIC_API_URL=https://api.example.com \
-  --build-arg NEXT_PUBLIC_SITE_URL=https://example.com .
-docker run -p 3000:3000 voltra-frontend
-```
+Vercel: импортировать репозиторий, Root Directory — `frontend`, в Environment Variables задать `NEXT_PUBLIC_API_MODE`, `NEXT_PUBLIC_API_URL`, `NEXT_PUBLIC_SITE_URL` (и `NEXT_PUBLIC_MEDIA_URL`, если медиа не на хосте API). Пока бэкенда нет, достаточно `NEXT_PUBLIC_API_MODE=mock` — сайт работает на демо-данных.

@@ -133,24 +133,14 @@ Stripe Checkout:
 - `cancel_url = {FRONTEND_URL}/account/orders/{number}` — там есть кнопка «Оплатить заказ», она снова вызывает `checkout-session`.
 - Статус `paid` ставит **только вебхук**. Страница успеха опрашивает `GET /orders/{number}/` каждые 2 с примерно 30 секунд.
 
-## 7. Деплой и Docker
+## 7. Деплой
 
-- `frontend/Dockerfile` собирает standalone-образ. `NEXT_PUBLIC_*` передаются как `--build-arg`, потому что вшиваются в бандл при сборке. Docker у меня не установлен, поэтому образ я не проверял.
-- Сервис для `docker-compose.yml`:
+Без Docker: проект для портфолио, сложная инфраструктура не нужна.
 
-```yaml
-frontend:
-  build:
-    context: ./frontend
-    args:
-      NEXT_PUBLIC_API_MODE: api
-      NEXT_PUBLIC_API_URL: http://localhost:8000
-      NEXT_PUBLIC_SITE_URL: http://localhost:3000
-  ports: ["3000:3000"]
-  depends_on: [backend]
-```
-
-- Серверные компоненты Next ходят в API со своей стороны. Внутри одной compose-сети браузеру нужен `localhost:8000`, а контейнеру — `backend:8000`. Сейчас адрес один на оба случая, поэтому для compose проще открыть бэк наружу на 8000. Если понадобится, разделю на два адреса.
+- **Локально:** бэк — `python manage.py runserver` на `localhost:8000`, фронт — `npm run dev` на `localhost:3000` с `NEXT_PUBLIC_API_MODE=api`.
+- **Прод:** фронт — Vercel (бесплатно, Root Directory `frontend`), бэк — Render или Railway вместе с их PostgreSQL. На фронте задаю `NEXT_PUBLIC_API_URL` = публичный адрес твоего API.
+- Redis и Celery не обязательны: письма подтверждения и сброса пароля можно отправлять синхронно прямо из view.
+- Серверные компоненты Next ходят в API с сервера Vercel, поэтому API должен быть доступен из интернета, а не только из браузера.
 - Если медиа лежат не на хосте API (Cloudinary, R2), задай `NEXT_PUBLIC_MEDIA_URL`: `next/image` пускает только разрешённые хосты.
 
 ## 8. Демо-данные

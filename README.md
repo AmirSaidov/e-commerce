@@ -5,13 +5,13 @@
 | Часть | Стек | Кто |
 | --- | --- | --- |
 | [`frontend/`](frontend/) | Next.js 15, TypeScript, Tailwind CSS 4, TanStack Query, Zustand, React Hook Form + Zod | Амир |
-| `backend/` | Django 5, Django REST Framework, PostgreSQL, Redis, Celery, Stripe | Айбек |
+| `backend/` | Django 5, Django REST Framework, PostgreSQL, Stripe | Айбек |
 
 ## Статус
 
 - [x] Фронтенд: все страницы из ТЗ, работает на демо-данных (`NEXT_PUBLIC_API_MODE=mock`)
 - [ ] Бэкенд: API по контракту из [`docs/frontend-report.md`](docs/frontend-report.md)
-- [ ] Docker Compose, деплой, демо-ссылка
+- [ ] Деплой (фронт — Vercel, бэк — Render/Railway) и демо-ссылка
 
 ## Запуск фронтенда
 
