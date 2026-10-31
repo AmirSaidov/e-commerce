@@ -1,0 +1,11 @@
+# OS и редакторы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# окружение
+.env
+.env.*
+!.env.example

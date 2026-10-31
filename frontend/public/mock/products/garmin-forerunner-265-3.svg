@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Garmin Forerunner 265">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ecfeff"/><stop offset="1" stop-color="#cffafe"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#06b6d4" stop-opacity="0.85"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lens" cx="0.4" cy="0.35"><stop offset="0" stop-color="#60a5fa"/><stop offset="0.6" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0b1020"/></radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="560" cy="230" r="220" fill="#fff" opacity="0.45"/>
+  
+  <g transform="translate(460 490) rotate(0) scale(1.7) translate(-400 -400)">
+  <rect x="332" y="100" width="136" height="600" rx="40" fill="#0b576c"/>
+  <rect x="290" y="270" width="220" height="260" rx="62" fill="#0e7490"/>
+  <rect x="306" y="286" width="188" height="228" rx="48" fill="url(#screen)"/>
+  <clipPath id="clip-306-286"><rect x="306" y="286" width="188" height="228" rx="48"/></clipPath>
+  <g clip-path="url(#clip-306-286)"><circle cx="437.6" cy="354.4" r="102.60000000000001" fill="url(#glow)"/></g>
+  <rect x="508" y="340" width="16" height="52" rx="6" fill="#0e7490"/>
+  <text x="400" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#fff">10:09</text></g>
+</svg>

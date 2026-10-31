@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Sony WH-1000XM5">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fefce8"/><stop offset="1" stop-color="#fef9c3"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#eab308" stop-opacity="0.85"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lens" cx="0.4" cy="0.35"><stop offset="0" stop-color="#60a5fa"/><stop offset="0.6" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0b1020"/></radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="560" cy="230" r="220" fill="#fff" opacity="0.45"/>
+  <ellipse cx="400" cy="700" rx="220" ry="26" fill="#0f172a" opacity="0.12" filter="url(#soft)"/>
+  <g transform="translate(400 410) rotate(-14) scale(0.9) translate(-400 -400)">
+  <path d="M252 430 V350 A148 148 0 0 1 548 350 V430" fill="none" stroke="#1f2937" stroke-width="34" stroke-linecap="round"/>
+  <rect x="210" y="380" width="96" height="180" rx="44" fill="#1f2937"/>
+  <rect x="494" y="380" width="96" height="180" rx="44" fill="#1f2937"/>
+  <rect x="292" y="400" width="24" height="140" rx="12" fill="#141b24"/>
+  <rect x="484" y="400" width="24" height="140" rx="12" fill="#141b24"/></g>
+</svg>

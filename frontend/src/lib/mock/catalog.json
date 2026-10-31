@@ -1,0 +1,294 @@
+{
+  "categories": [
+    { "slug": "smartphones", "name": "Смартфоны", "parent": null, "kind": "phone", "color": "#1f2937" },
+    { "slug": "computers", "name": "Компьютеры", "parent": null, "kind": "laptop", "color": "#475569" },
+    { "slug": "laptops", "name": "Ноутбуки", "parent": "computers", "kind": "laptop", "color": "#475569" },
+    { "slug": "tablets", "name": "Планшеты", "parent": "computers", "kind": "tablet", "color": "#334155" },
+    { "slug": "monitors", "name": "Мониторы", "parent": "computers", "kind": "monitor", "color": "#111827" },
+    { "slug": "audio", "name": "Аудио", "parent": null, "kind": "headphones", "color": "#4338ca" },
+    { "slug": "headphones", "name": "Наушники", "parent": "audio", "kind": "headphones", "color": "#4338ca" },
+    { "slug": "speakers", "name": "Колонки", "parent": "audio", "kind": "speaker", "color": "#0f766e" },
+    { "slug": "smartwatches", "name": "Умные часы", "parent": null, "kind": "watch", "color": "#be123c" },
+    { "slug": "cameras", "name": "Фото и видео", "parent": null, "kind": "camera", "color": "#292524" },
+    { "slug": "gaming", "name": "Игры", "parent": null, "kind": "console", "color": "#1e293b" },
+    { "slug": "consoles", "name": "Консоли", "parent": "gaming", "kind": "console", "color": "#1e293b" },
+    { "slug": "gamepads", "name": "Геймпады", "parent": "gaming", "kind": "gamepad", "color": "#7c3aed" }
+  ],
+  "brands": [
+    { "slug": "apple", "name": "Apple" },
+    { "slug": "samsung", "name": "Samsung" },
+    { "slug": "xiaomi", "name": "Xiaomi" },
+    { "slug": "google", "name": "Google" },
+    { "slug": "nothing", "name": "Nothing" },
+    { "slug": "asus", "name": "ASUS" },
+    { "slug": "lenovo", "name": "Lenovo" },
+    { "slug": "huawei", "name": "Huawei" },
+    { "slug": "lg", "name": "LG" },
+    { "slug": "dell", "name": "Dell" },
+    { "slug": "sony", "name": "Sony" },
+    { "slug": "sennheiser", "name": "Sennheiser" },
+    { "slug": "jbl", "name": "JBL" },
+    { "slug": "marshall", "name": "Marshall" },
+    { "slug": "sonos", "name": "Sonos" },
+    { "slug": "garmin", "name": "Garmin" },
+    { "slug": "canon", "name": "Canon" },
+    { "slug": "gopro", "name": "GoPro" },
+    { "slug": "microsoft", "name": "Microsoft" },
+    { "slug": "nintendo", "name": "Nintendo" },
+    { "slug": "8bitdo", "name": "8BitDo" }
+  ],
+  "products": [
+    {
+      "slug": "apple-iphone-16-pro", "name": "Apple iPhone 16 Pro", "brand": "apple", "category": "smartphones",
+      "kind": "phone", "color": "#a8a29e", "price": 599990, "old_price": null, "rating": 4.8, "popularity": 98, "created": "2026-09-20",
+      "description": "Титановый корпус, камера 48 Мп с пятикратным зумом и чип A18 Pro. Кнопка управления камерой и дисплей ProMotion 120 Гц.",
+      "specs": { "Экран": "6,3\", OLED, 120 Гц", "Процессор": "Apple A18 Pro", "Основная камера": "48 + 48 + 12 Мп", "Аккумулятор": "до 27 ч видео", "Разъём": "USB-C (USB 3)" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 12 }, { "name": "256 ГБ", "delta": 80000, "stock": 7 }, { "name": "512 ГБ", "delta": 200000, "stock": 2 }]
+    },
+    {
+      "slug": "samsung-galaxy-s25", "name": "Samsung Galaxy S25", "brand": "samsung", "category": "smartphones",
+      "kind": "phone", "color": "#1e3a8a", "price": 459990, "old_price": 499990, "rating": 4.7, "popularity": 90, "created": "2026-02-10",
+      "description": "Компактный флагман с ярким экраном Dynamic AMOLED 2X и ИИ-функциями Galaxy AI. Семь лет обновлений системы.",
+      "specs": { "Экран": "6,2\", AMOLED, 120 Гц", "Процессор": "Snapdragon 8 Elite", "Основная камера": "50 + 12 + 10 Мп", "Аккумулятор": "4000 мА·ч", "Защита": "IP68" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 15 }, { "name": "256 ГБ", "delta": 40000, "stock": 9 }]
+    },
+    {
+      "slug": "xiaomi-14t", "name": "Xiaomi 14T", "brand": "xiaomi", "category": "smartphones",
+      "kind": "phone", "color": "#0f766e", "price": 249990, "old_price": null, "rating": 4.5, "popularity": 74, "created": "2026-04-02",
+      "description": "Камера с оптикой Leica, быстрая зарядка 67 Вт и плавный AMOLED-экран 144 Гц по доступной цене.",
+      "specs": { "Экран": "6,67\", AMOLED, 144 Гц", "Процессор": "Dimensity 8300-Ultra", "Основная камера": "50 + 50 + 12 Мп", "Аккумулятор": "5000 мА·ч", "Зарядка": "67 Вт" },
+      "variants": [{ "name": "256 ГБ", "delta": 0, "stock": 20 }, { "name": "512 ГБ", "delta": 30000, "stock": 6 }]
+    },
+    {
+      "slug": "google-pixel-9", "name": "Google Pixel 9", "brand": "google", "category": "smartphones",
+      "kind": "phone", "color": "#f472b6", "price": 389990, "old_price": null, "rating": 4.6, "popularity": 61, "created": "2026-01-15",
+      "description": "Чистый Android, лучшая в классе ночная съёмка и умный ассистент Gemini прямо в смартфоне.",
+      "specs": { "Экран": "6,3\", OLED, 120 Гц", "Процессор": "Google Tensor G4", "Основная камера": "50 + 48 Мп", "Аккумулятор": "4700 мА·ч", "Обновления": "7 лет" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 4 }]
+    },
+    {
+      "slug": "nothing-phone-3a", "name": "Nothing Phone (3a)", "brand": "nothing", "category": "smartphones",
+      "kind": "phone", "color": "#e5e7eb", "price": 189990, "old_price": 209990, "rating": 4.4, "popularity": 55, "created": "2026-06-11",
+      "description": "Прозрачный дизайн с подсветкой Glyph, перископный телеобъектив и чистая оболочка Nothing OS.",
+      "specs": { "Экран": "6,77\", AMOLED, 120 Гц", "Процессор": "Snapdragon 7s Gen 3", "Основная камера": "50 + 50 + 8 Мп", "Аккумулятор": "5000 мА·ч" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 10 }, { "name": "256 ГБ", "delta": 20000, "stock": 8 }]
+    },
+    {
+      "slug": "apple-macbook-air-13-m4", "name": "Apple MacBook Air 13\" M4", "brand": "apple", "category": "laptops",
+      "kind": "laptop", "color": "#94a3b8", "price": 649990, "old_price": null, "rating": 4.9, "popularity": 95, "created": "2026-03-12",
+      "description": "Тонкий и бесшумный ноутбук на чипе M4: до 18 часов работы, яркий Liquid Retina и камера Center Stage.",
+      "specs": { "Экран": "13,6\", Liquid Retina", "Процессор": "Apple M4, 10 ядер", "Вес": "1,24 кг", "Автономность": "до 18 ч", "Порты": "2 × Thunderbolt 4, MagSafe" },
+      "variants": [{ "name": "16 ГБ / 256 ГБ", "delta": 0, "stock": 8 }, { "name": "16 ГБ / 512 ГБ", "delta": 120000, "stock": 5 }, { "name": "24 ГБ / 512 ГБ", "delta": 220000, "stock": 3 }]
+    },
+    {
+      "slug": "asus-zenbook-14-oled", "name": "ASUS Zenbook 14 OLED", "brand": "asus", "category": "laptops",
+      "kind": "laptop", "color": "#1e3a8a", "price": 499990, "old_price": 549990, "rating": 4.6, "popularity": 70, "created": "2026-05-06",
+      "description": "Лёгкий ультрабук с OLED-экраном 3K и процессором Intel Core Ultra. Отлично подходит для работы в дороге.",
+      "specs": { "Экран": "14\", OLED 3K, 120 Гц", "Процессор": "Intel Core Ultra 7 155H", "Память": "16 ГБ LPDDR5X", "Накопитель": "1 ТБ SSD", "Вес": "1,2 кг" },
+      "variants": [{ "name": "16 ГБ / 1 ТБ", "delta": 0, "stock": 6 }]
+    },
+    {
+      "slug": "lenovo-thinkpad-x1-carbon", "name": "Lenovo ThinkPad X1 Carbon Gen 12", "brand": "lenovo", "category": "laptops",
+      "kind": "laptop", "color": "#111827", "price": 899990, "old_price": null, "rating": 4.7, "popularity": 48, "created": "2025-11-20",
+      "description": "Бизнес-ноутбук из углепластика с легендарной клавиатурой ThinkPad, защитой данных и военным стандартом прочности.",
+      "specs": { "Экран": "14\", 2.8K OLED", "Процессор": "Intel Core Ultra 7 165U", "Память": "32 ГБ", "Накопитель": "1 ТБ SSD", "Вес": "1,09 кг" },
+      "variants": [{ "name": "32 ГБ / 1 ТБ", "delta": 0, "stock": 2 }]
+    },
+    {
+      "slug": "huawei-matebook-14", "name": "Huawei MateBook 14", "brand": "huawei", "category": "laptops",
+      "kind": "laptop", "color": "#64748b", "price": 429990, "old_price": null, "rating": 4.4, "popularity": 35, "created": "2026-07-01",
+      "description": "Металлический корпус, сенсорный экран 2.8K и удобная экосистема с телефонами Huawei.",
+      "specs": { "Экран": "14,2\", 2.8K, сенсорный", "Процессор": "Intel Core Ultra 5 125H", "Память": "16 ГБ", "Накопитель": "512 ГБ SSD" },
+      "variants": [{ "name": "16 ГБ / 512 ГБ", "delta": 0, "stock": 0 }]
+    },
+    {
+      "slug": "apple-ipad-air-11-m3", "name": "Apple iPad Air 11\" M3", "brand": "apple", "category": "tablets",
+      "kind": "tablet", "color": "#7dd3fc", "price": 379990, "old_price": null, "rating": 4.8, "popularity": 77, "created": "2026-03-20",
+      "description": "Мощный и лёгкий планшет на чипе M3 с поддержкой Apple Pencil Pro и клавиатуры Magic Keyboard.",
+      "specs": { "Экран": "11\", Liquid Retina", "Процессор": "Apple M3", "Камера": "12 Мп", "Вес": "460 г" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 9 }, { "name": "256 ГБ", "delta": 60000, "stock": 4 }]
+    },
+    {
+      "slug": "samsung-galaxy-tab-s10", "name": "Samsung Galaxy Tab S10+", "brand": "samsung", "category": "tablets",
+      "kind": "tablet", "color": "#475569", "price": 459990, "old_price": null, "rating": 4.6, "popularity": 44, "created": "2025-12-05",
+      "description": "Большой AMOLED-экран 12,4\", стилус S Pen в комплекте и защита от воды IP68.",
+      "specs": { "Экран": "12,4\", Dynamic AMOLED 2X", "Процессор": "Dimensity 9300+", "Стилус": "S Pen в комплекте", "Аккумулятор": "10090 мА·ч" },
+      "variants": [{ "name": "256 ГБ", "delta": 0, "stock": 5 }]
+    },
+    {
+      "slug": "xiaomi-pad-7", "name": "Xiaomi Pad 7", "brand": "xiaomi", "category": "tablets",
+      "kind": "tablet", "color": "#16a34a", "price": 179990, "old_price": 199990, "rating": 4.5, "popularity": 66, "created": "2026-04-18",
+      "description": "Экран 3.2K со 144 Гц и четыре динамика — отличный планшет для кино, учёбы и игр.",
+      "specs": { "Экран": "11,2\", 3.2K, 144 Гц", "Процессор": "Snapdragon 7+ Gen 3", "Динамики": "4, Dolby Atmos", "Аккумулятор": "8850 мА·ч" },
+      "variants": [{ "name": "128 ГБ", "delta": 0, "stock": 14 }, { "name": "256 ГБ", "delta": 25000, "stock": 7 }]
+    },
+    {
+      "slug": "lg-ultragear-27gr95qe", "name": "LG UltraGear 27\" OLED", "brand": "lg", "category": "monitors",
+      "kind": "monitor", "color": "#111827", "price": 389990, "old_price": null, "rating": 4.7, "popularity": 39, "created": "2026-02-25",
+      "description": "Игровой OLED-монитор с частотой 240 Гц и откликом 0,03 мс: идеальный чёрный и мгновенная реакция.",
+      "specs": { "Диагональ": "27\"", "Разрешение": "2560 × 1440", "Частота": "240 Гц", "Матрица": "OLED" },
+      "variants": [{ "name": "27\"", "delta": 0, "stock": 3 }]
+    },
+    {
+      "slug": "samsung-odyssey-g5", "name": "Samsung Odyssey G5 32\"", "brand": "samsung", "category": "monitors",
+      "kind": "monitor", "color": "#1f2937", "price": 159990, "old_price": 179990, "rating": 4.5, "popularity": 58, "created": "2025-10-14",
+      "description": "Изогнутый монитор 32\" с разрешением QHD и частотой 165 Гц для погружения в игры.",
+      "specs": { "Диагональ": "32\"", "Разрешение": "2560 × 1440", "Частота": "165 Гц", "Изгиб": "1000R" },
+      "variants": [{ "name": "32\"", "delta": 0, "stock": 11 }]
+    },
+    {
+      "slug": "dell-ultrasharp-u2724d", "name": "Dell UltraSharp U2724D", "brand": "dell", "category": "monitors",
+      "kind": "monitor", "color": "#374151", "price": 249990, "old_price": null, "rating": 4.6, "popularity": 31, "created": "2025-09-03",
+      "description": "Профессиональный IPS-монитор с точной цветопередачей и частотой 120 Гц для дизайнеров и разработчиков.",
+      "specs": { "Диагональ": "27\"", "Разрешение": "2560 × 1440", "Частота": "120 Гц", "Порты": "USB-C 90 Вт, HDMI, DP" },
+      "variants": [{ "name": "27\"", "delta": 0, "stock": 6 }]
+    },
+    {
+      "slug": "sony-wh-1000xm5", "name": "Sony WH-1000XM5", "brand": "sony", "category": "headphones",
+      "kind": "headphones", "color": "#1f2937", "price": 179990, "old_price": 199990, "rating": 4.8, "popularity": 92, "created": "2025-08-15",
+      "description": "Эталонное шумоподавление, 30 часов работы и кристальная связь благодаря восьми микрофонам.",
+      "specs": { "Тип": "Полноразмерные, беспроводные", "Шумоподавление": "Активное", "Автономность": "до 30 ч", "Bluetooth": "5.2, LDAC" },
+      "variants": [{ "name": "Чёрные", "delta": 0, "stock": 18 }, { "name": "Серебристые", "delta": 0, "stock": 6 }]
+    },
+    {
+      "slug": "apple-airpods-pro-2", "name": "Apple AirPods Pro 2", "brand": "apple", "category": "headphones",
+      "kind": "earbuds", "color": "#f8fafc", "price": 129990, "old_price": null, "rating": 4.8, "popularity": 97, "created": "2025-09-25",
+      "description": "Активное шумоподавление, адаптивное аудио и персональный пространственный звук. Кейс с USB-C.",
+      "specs": { "Тип": "TWS, вкладыши", "Шумоподавление": "Активное", "Автономность": "до 30 ч с кейсом", "Защита": "IP54" },
+      "variants": [{ "name": "USB-C", "delta": 0, "stock": 30 }]
+    },
+    {
+      "slug": "sennheiser-momentum-4", "name": "Sennheiser Momentum 4 Wireless", "brand": "sennheiser", "category": "headphones",
+      "kind": "headphones", "color": "#57534e", "price": 169990, "old_price": null, "rating": 4.7, "popularity": 42, "created": "2025-11-02",
+      "description": "Фирменный звук Sennheiser и рекордные 60 часов работы от одного заряда.",
+      "specs": { "Тип": "Полноразмерные, беспроводные", "Шумоподавление": "Адаптивное", "Автономность": "до 60 ч", "Bluetooth": "5.2, aptX Adaptive" },
+      "variants": [{ "name": "Чёрные", "delta": 0, "stock": 4 }]
+    },
+    {
+      "slug": "jbl-tune-770nc", "name": "JBL Tune 770NC", "brand": "jbl", "category": "headphones",
+      "kind": "headphones", "color": "#2563eb", "price": 49990, "old_price": 59990, "rating": 4.4, "popularity": 81, "created": "2026-05-22",
+      "description": "Лёгкие наушники с шумоподавлением и фирменным басом JBL Pure Bass. До 70 часов музыки.",
+      "specs": { "Тип": "Накладные, беспроводные", "Шумоподавление": "Адаптивное", "Автономность": "до 70 ч", "Вес": "232 г" },
+      "variants": [{ "name": "Синие", "delta": 0, "stock": 22 }, { "name": "Чёрные", "delta": 0, "stock": 17 }]
+    },
+    {
+      "slug": "samsung-galaxy-buds-3-pro", "name": "Samsung Galaxy Buds3 Pro", "brand": "samsung", "category": "headphones",
+      "kind": "earbuds", "color": "#cbd5e1", "price": 99990, "old_price": null, "rating": 4.5, "popularity": 57, "created": "2026-07-28",
+      "description": "Вкладыши с двухполосными динамиками, шумоподавлением и переводом речи в реальном времени.",
+      "specs": { "Тип": "TWS, вкладыши", "Шумоподавление": "Адаптивное", "Автономность": "до 30 ч с кейсом", "Защита": "IP57" },
+      "variants": [{ "name": "Серебристые", "delta": 0, "stock": 12 }]
+    },
+    {
+      "slug": "jbl-charge-5", "name": "JBL Charge 5", "brand": "jbl", "category": "speakers",
+      "kind": "speaker", "color": "#dc2626", "price": 79990, "old_price": null, "rating": 4.7, "popularity": 85, "created": "2025-07-10",
+      "description": "Мощная портативная колонка с защитой IP67 и функцией пауэрбанка. До 20 часов музыки.",
+      "specs": { "Мощность": "40 Вт", "Защита": "IP67", "Автономность": "до 20 ч", "Пауэрбанк": "Да" },
+      "variants": [{ "name": "Красная", "delta": 0, "stock": 16 }, { "name": "Чёрная", "delta": 0, "stock": 9 }]
+    },
+    {
+      "slug": "marshall-emberton-3", "name": "Marshall Emberton III", "brand": "marshall", "category": "speakers",
+      "kind": "speaker", "color": "#292524", "price": 89990, "old_price": null, "rating": 4.6, "popularity": 50, "created": "2026-03-01",
+      "description": "Компактная колонка с узнаваемым дизайном Marshall и честным звуком 360°. Больше 32 часов работы.",
+      "specs": { "Мощность": "38 Вт", "Защита": "IP67", "Автономность": "более 32 ч", "Bluetooth": "5.3, LE Audio" },
+      "variants": [{ "name": "Чёрная", "delta": 0, "stock": 7 }]
+    },
+    {
+      "slug": "sonos-era-100", "name": "Sonos Era 100", "brand": "sonos", "category": "speakers",
+      "kind": "speaker", "color": "#f1f5f9", "price": 139990, "old_price": 154990, "rating": 4.6, "popularity": 29, "created": "2025-10-30",
+      "description": "Умная колонка для дома со стереозвуком, Wi-Fi и AirPlay 2. Легко объединяется в мультирум.",
+      "specs": { "Подключение": "Wi-Fi, Bluetooth, USB-C", "Стерео": "Да", "Голосовое управление": "Да", "AirPlay 2": "Да" },
+      "variants": [{ "name": "Белая", "delta": 0, "stock": 5 }]
+    },
+    {
+      "slug": "apple-watch-series-10", "name": "Apple Watch Series 10", "brand": "apple", "category": "smartwatches",
+      "kind": "watch", "color": "#18181b", "price": 249990, "old_price": null, "rating": 4.8, "popularity": 88, "created": "2026-09-22",
+      "description": "Самые тонкие Apple Watch с огромным широкоугольным экраном, датчиком глубины и отслеживанием сна.",
+      "specs": { "Экран": "OLED LTPO3, Always-On", "Корпус": "Алюминий", "Защита": "WR50", "Датчики": "ЭКГ, SpO2, температура" },
+      "variants": [{ "name": "42 мм", "delta": 0, "stock": 10 }, { "name": "46 мм", "delta": 20000, "stock": 8 }]
+    },
+    {
+      "slug": "samsung-galaxy-watch-7", "name": "Samsung Galaxy Watch7", "brand": "samsung", "category": "smartwatches",
+      "kind": "watch", "color": "#a3a3a3", "price": 149990, "old_price": 169990, "rating": 4.5, "popularity": 63, "created": "2025-12-15",
+      "description": "Умные часы с анализом сна, индексом антиоксидантов и до 40 часов работы.",
+      "specs": { "Экран": "Super AMOLED", "Корпус": "Алюминий", "Защита": "5ATM, IP68", "Автономность": "до 40 ч" },
+      "variants": [{ "name": "40 мм", "delta": 0, "stock": 9 }, { "name": "44 мм", "delta": 15000, "stock": 6 }]
+    },
+    {
+      "slug": "garmin-forerunner-265", "name": "Garmin Forerunner 265", "brand": "garmin", "category": "smartwatches",
+      "kind": "watch", "color": "#0e7490", "price": 219990, "old_price": null, "rating": 4.7, "popularity": 37, "created": "2026-01-28",
+      "description": "Беговые часы с AMOLED-экраном, оценкой готовности к тренировке и двухчастотным GPS.",
+      "specs": { "Экран": "AMOLED", "GPS": "Двухчастотный", "Автономность": "до 13 дней", "Защита": "5ATM" },
+      "variants": [{ "name": "46 мм", "delta": 0, "stock": 3 }]
+    },
+    {
+      "slug": "huawei-watch-gt-5", "name": "Huawei Watch GT 5", "brand": "huawei", "category": "smartwatches",
+      "kind": "watch", "color": "#78350f", "price": 99990, "old_price": null, "rating": 4.4, "popularity": 52, "created": "2026-08-08",
+      "description": "Стильные часы в классическом корпусе: до 14 дней автономности и точный пульсометр TruSense.",
+      "specs": { "Экран": "AMOLED 1,43\"", "Корпус": "Нержавеющая сталь", "Автономность": "до 14 дней", "Защита": "5ATM" },
+      "variants": [{ "name": "46 мм, кожаный ремешок", "delta": 0, "stock": 11 }]
+    },
+    {
+      "slug": "sony-alpha-a7-iv", "name": "Sony Alpha A7 IV Body", "brand": "sony", "category": "cameras",
+      "kind": "camera", "color": "#1c1917", "price": 1199990, "old_price": null, "rating": 4.9, "popularity": 33, "created": "2025-06-18",
+      "description": "Полнокадровая беззеркальная камера 33 Мп для фото и видео 4K 60p с отличным автофокусом.",
+      "specs": { "Матрица": "Full Frame, 33 Мп", "Видео": "4K 60p, 10 бит", "Стабилизация": "5-осевая", "Байонет": "Sony E" },
+      "variants": [{ "name": "Body", "delta": 0, "stock": 2 }]
+    },
+    {
+      "slug": "canon-eos-r50", "name": "Canon EOS R50 Kit 18-45", "brand": "canon", "category": "cameras",
+      "kind": "camera", "color": "#262626", "price": 389990, "old_price": 419990, "rating": 4.6, "popularity": 46, "created": "2026-02-02",
+      "description": "Компактная беззеркалка для блогеров и начинающих фотографов. 4K-видео и удобный поворотный экран.",
+      "specs": { "Матрица": "APS-C, 24,2 Мп", "Видео": "4K 30p", "Экран": "Поворотный, сенсорный", "Вес": "375 г" },
+      "variants": [{ "name": "Kit 18-45", "delta": 0, "stock": 5 }]
+    },
+    {
+      "slug": "gopro-hero-13", "name": "GoPro HERO13 Black", "brand": "gopro", "category": "cameras",
+      "kind": "actioncam", "color": "#0a0a0a", "price": 219990, "old_price": null, "rating": 4.5, "popularity": 40, "created": "2026-09-05",
+      "description": "Экшн-камера с видео 5.3K, стабилизацией HyperSmooth 6.0 и сменными линзами.",
+      "specs": { "Видео": "5.3K 60p", "Стабилизация": "HyperSmooth 6.0", "Защита": "до 10 м без бокса", "Аккумулятор": "1900 мА·ч" },
+      "variants": [{ "name": "Стандартная комплектация", "delta": 0, "stock": 7 }]
+    },
+    {
+      "slug": "sony-playstation-5-slim", "name": "Sony PlayStation 5 Slim", "brand": "sony", "category": "consoles",
+      "kind": "console", "color": "#f8fafc", "price": 279990, "old_price": null, "rating": 4.9, "popularity": 99, "created": "2025-11-25",
+      "description": "Компактная PlayStation 5 с дисководом, сверхбыстрым SSD на 1 ТБ и геймпадом DualSense.",
+      "specs": { "Накопитель": "1 ТБ SSD", "Разрешение": "до 4K 120 Гц", "Дисковод": "Ultra HD Blu-ray", "В комплекте": "Геймпад DualSense" },
+      "variants": [{ "name": "С дисководом", "delta": 0, "stock": 14 }, { "name": "Digital Edition", "delta": -40000, "stock": 8 }]
+    },
+    {
+      "slug": "microsoft-xbox-series-x", "name": "Microsoft Xbox Series X", "brand": "microsoft", "category": "consoles",
+      "kind": "console", "color": "#111827", "price": 289990, "old_price": null, "rating": 4.8, "popularity": 72, "created": "2025-10-08",
+      "description": "Самая мощная Xbox: 12 терафлопс, 4K при 120 FPS и подписка Game Pass с сотнями игр.",
+      "specs": { "Накопитель": "1 ТБ SSD", "Разрешение": "до 4K 120 Гц", "Дисковод": "Ultra HD Blu-ray", "Производительность": "12 TFLOPS" },
+      "variants": [{ "name": "1 ТБ", "delta": 0, "stock": 6 }]
+    },
+    {
+      "slug": "nintendo-switch-oled", "name": "Nintendo Switch OLED", "brand": "nintendo", "category": "consoles",
+      "kind": "console", "color": "#ef4444", "price": 169990, "old_price": 189990, "rating": 4.8, "popularity": 80, "created": "2025-08-30",
+      "description": "Гибридная консоль с ярким 7-дюймовым OLED-экраном: играйте дома на ТВ или в дороге.",
+      "specs": { "Экран": "7\", OLED", "Память": "64 ГБ", "Режимы": "ТВ, настольный, портативный", "Автономность": "4,5–9 ч" },
+      "variants": [{ "name": "Неоновая", "delta": 0, "stock": 9 }, { "name": "Белая", "delta": 0, "stock": 4 }]
+    },
+    {
+      "slug": "sony-dualsense", "name": "Sony DualSense", "brand": "sony", "category": "gamepads",
+      "kind": "gamepad", "color": "#f8fafc", "price": 39990, "old_price": null, "rating": 4.7, "popularity": 76, "created": "2025-07-22",
+      "description": "Геймпад для PS5 с тактильной отдачей и адаптивными триггерами.",
+      "specs": { "Совместимость": "PS5, ПК", "Подключение": "Bluetooth, USB-C", "Автономность": "до 12 ч", "Особенности": "Адаптивные триггеры" },
+      "variants": [{ "name": "Белый", "delta": 0, "stock": 25 }, { "name": "Midnight Black", "delta": 3000, "stock": 10 }]
+    },
+    {
+      "slug": "microsoft-xbox-wireless-controller", "name": "Xbox Wireless Controller", "brand": "microsoft", "category": "gamepads",
+      "kind": "gamepad", "color": "#16a34a", "price": 32990, "old_price": 36990, "rating": 4.6, "popularity": 60, "created": "2026-06-30",
+      "description": "Классический геймпад Xbox с текстурированными рукоятками и кнопкой «Поделиться».",
+      "specs": { "Совместимость": "Xbox, ПК, смартфоны", "Подключение": "Xbox Wireless, Bluetooth", "Питание": "2 × AA" },
+      "variants": [{ "name": "Velocity Green", "delta": 0, "stock": 13 }]
+    },
+    {
+      "slug": "8bitdo-ultimate", "name": "8BitDo Ultimate Bluetooth", "brand": "8bitdo", "category": "gamepads",
+      "kind": "gamepad", "color": "#6d28d9", "price": 24990, "old_price": null, "rating": 4.5, "popularity": 45, "created": "2026-08-19",
+      "description": "Универсальный геймпад с зарядной станцией, датчиками Холла и поддержкой Switch и ПК.",
+      "specs": { "Совместимость": "Switch, ПК, Android", "Подключение": "Bluetooth, 2.4G, USB", "Стики": "Датчики Холла", "Автономность": "до 22 ч" },
+      "variants": [{ "name": "Чёрный", "delta": 0, "stock": 15 }]
+    }
+  ]
+}
