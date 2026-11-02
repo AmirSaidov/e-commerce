@@ -1,0 +1,13 @@
+Django>=5.2,<6.0
+djangorestframework~=3.18
+djangorestframework-simplejwt~=5.5
+django-filter~=26.2
+django-cors-headers~=4.9
+django-environ~=0.14
+drf-spectacular~=0.30
+psycopg[binary]~=3.3
+Pillow~=13.0
+whitenoise~=6.12
+gunicorn~=26.2
+stripe~=16.1
+django-storages[s3]~=1.14
