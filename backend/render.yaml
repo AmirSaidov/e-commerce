@@ -1,0 +1,61 @@
+# Render Blueprint: API + PostgreSQL. Создать: Dashboard → New → Blueprint → этот репозиторий.
+# Переменные с sync: false Render спросит при создании (секреты и адреса, которых нет в репозитории).
+databases:
+  - name: voltra-db
+    plan: free
+    databaseName: voltra
+    user: voltra
+
+services:
+  - type: web
+    name: voltra-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    # Миграции и seed — при каждом старте: migrate без новых миграций ничего не делает,
+    # seed --if-empty заполняет каталог только в пустой базе (первый деплой).
+    startCommand: >-
+      python manage.py migrate --noinput &&
+      python manage.py seed --github --if-empty &&
+      gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers ${WEB_CONCURRENCY:-2} --timeout 60
+    healthCheckPath: /api/v1/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: voltra-db
+          property: connectionString
+      # Адрес фронта на Vercel, например https://voltra.vercel.app (без слеша в конце)
+      - key: FRONTEND_URL
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
+      # ALLOWED_HOSTS и CSRF_TRUSTED_ORIGINS дополняются адресом сервиса из RENDER_EXTERNAL_HOSTNAME
+      # автоматически; задайте их, только если подключаете свой домен.
+      - key: EMAIL_URL
+        sync: false # smtp+tls://user:password@smtp.example.com:587
+      - key: DEFAULT_FROM_EMAIL
+        value: Voltra <no-reply@voltra.kz>
+      # Медиа без постоянного диска — Cloudflare R2 (см. README, раздел «Медиа»)
+      - key: MEDIA_STORAGE
+        value: s3
+      - key: S3_BUCKET
+        sync: false
+      - key: S3_ENDPOINT_URL
+        sync: false
+      - key: S3_ACCESS_KEY_ID
+        sync: false
+      - key: S3_SECRET_ACCESS_KEY
+        sync: false
+      - key: S3_PUBLIC_DOMAIN
+        sync: false
+      # Stripe необязателен: без ключей онлайн-оплата выключена, остальное работает
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
